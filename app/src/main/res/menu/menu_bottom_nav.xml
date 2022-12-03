@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:title="@string/nav_menu_box_inhalt"
+            android:id="@+id/navigation_boxcontent"
+            android:icon="@drawable/ic_menu_archive"/>
+    <item
+            android:title="@string/nav_menu_tag"
+            android:id="@+id/navigation_tags"
+            android:icon="@drawable/ic_nfc_opt_black_64dp"/>
+    <item
+            android:title="@string/nav_menu_einstellungen"
+            android:id="@+id/navigation_settings"
+            android:icon="@drawable/ic_menu_manage"/>
+</menu>

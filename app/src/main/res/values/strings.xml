@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Titel -->
+    <string name="app_name">StorageBox Manager</string>
+    <string name="title_box_content">Box Inhalt</string>
+    <string name="title_tags">Box Tags</string>
+    <string name="title_settings">Einstellungen</string>
+    <string name="title_inhalt_hinzu">Inhalt Hinzufügen</string>
+    <string name="title_details">Details</string>
+
+    <!-- Menu -->
+    <string name="menu_search">Suche</string>
+    <string name="menu_new_box">Neue Box erstellen</string>
+    <string name="menu_mod_box">Box umbenennen</string>
+    <string name="menu_id_box">Box ID anzeigen</string>
+    <string name="menu_delete_box">Box löschen</string>
+    <string name="nav_menu_box_inhalt">Box Inhalt</string>
+    <string name="nav_menu_tag">Box Tags</string>
+    <string name="nav_menu_einstellungen">Einstellungen</string>
+
+    <!-- Buttons -->
+    <string name="btn_inhalt_aendern">Inhalt ändern</string>
+    <string name="btn_erstellen">Inhalt erstellen</string>
+    <string name="btn_abbrechen">Abbrechen</string>
+    <string name="btn_text_nfc">Tag beschreiben</string>
+    <string name="btn_zurueck">Zurück</string>
+
+    <!-- Sonstiges -->
+    <string name="imgDescriptionIcon">IconPicture</string>
+    <string name="sample_directory">test</string>
+    <string name="box_beschreibung">Box Beschreibung</string>
+
+    <!-- Permission check -->
+    <string name="permission_required">Bitte Berechtigung zur Nutzung der Kamera erteilen.</string>
+    <string name="ok">OK</string>
+
+
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_search"
+          android:title="@string/menu_search"
+          android:icon="@drawable/ic_menu_search_holo_light"
+          app:showAsAction="ifRoom"/>
+
+    <item
+            android:id="@+id/overflowMenu"
+            android:icon="@drawable/ic_menu_moreoverflow_normal_holo_light"
+            android:title=""
+            app:showAsAction="always">
+
+        <menu>
+
+            <item android:id="@+id/box_descr"
+                  android:title="@string/box_beschreibung"
+                  android:orderInCategory="100"
+                  app:showAsAction="never"/>
+
+            <item android:id="@+id/mod_box"
+                  android:title="@string/menu_mod_box"
+                  android:orderInCategory="100"
+                  app:showAsAction="never"/>
+
+            <item android:id="@+id/delete_box"
+                  android:title="@string/menu_delete_box"
+                  android:orderInCategory="100"
+                  app:showAsAction="never"/>
+
+            <item android:id="@+id/new_box"
+                  android:title="@string/menu_new_box"
+                  android:orderInCategory="100"
+                  app:showAsAction="never"/>
+
+        </menu>
+    </item>
+</menu>

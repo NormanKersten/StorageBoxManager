@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.ActivityNewItem">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.ActivityNewItem">
+
+        <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp" app:srcCompat="@drawable/ic_menu_archive" android:id="@+id/imageView3"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="24dp" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp"/>
+
+        <TextView
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/idTVboxNewItem"
+                app:layout_constraintStart_toEndOf="@+id/imageView3"
+                app:layout_constraintTop_toTopOf="@+id/imageView3"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView3" android:layout_marginStart="12dp"/>
+
+        <ImageView
+                android:id="@+id/iVnewItem"
+                android:layout_width="0dp"
+                android:layout_height="280dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/image_border"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" android:layout_marginTop="16dp"/>
+
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp" app:srcCompat="@android:drawable/ic_menu_camera"
+                android:id="@+id/imageView2"
+                app:layout_constraintBottom_toBottomOf="@+id/idBTNBildaufnahme"
+                app:layout_constraintEnd_toStartOf="@+id/idBTNBildaufnahme"
+                android:layout_marginEnd="4dp" app:layout_constraintTop_toTopOf="@+id/idBTNBildaufnahme"/>
+        <Button
+                android:id="@+id/idBTNBildaufnahme"
+                android:text="Bild hinzufügen"
+                android:layout_width="180dp"
+                android:layout_height="48dp"
+                android:onClick="onBtnCameraClick"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iVnewItem" android:layout_marginTop="8dp"
+                app:backgroundTint="@color/light_blue_500"/>
+        <TextView
+                android:text="Benennung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TVnewItemBenennung"
+                android:padding="4dp"
+                android:textColor="@color/light_blue_700"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/idBTNBildaufnahme"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textShortMessage|textPersonName"
+                android:hint="Benennung des Artikels"
+                android:ems="10"
+                android:maxLength="50"
+                android:id="@+id/ETnewItemBenennung"
+                app:layout_constraintTop_toBottomOf="@+id/TVnewItemBenennung"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="8dp" android:minHeight="48dp"
+                app:layout_constraintEnd_toStartOf="@+id/idETnumber" android:layout_marginEnd="16dp"/>
+        <TextView
+                android:text="Beschreibung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:padding="4dp"
+                android:textColor="@color/light_blue_700"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/ETnewItemBenennung"
+                app:layout_constraintStart_toStartOf="@+id/TVnewItemBenennung" android:layout_marginTop="16dp"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textLongMessage|textMultiLine"
+                android:hint="Beschreibung des Artikels"
+                android:ems="10"
+                android:maxLength="250"
+                android:id="@+id/ETnewItemBeschreibung"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="4dp" android:minHeight="48dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+        <TextView
+                android:text="Anzahl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TVanzahl"
+                android:padding="4dp"
+                android:textColor="@color/light_blue_700"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@+id/TVnewItemBenennung"
+                android:layout_marginEnd="8dp"/>
+
+        <Button
+                android:text="@string/btn_abbrechen"
+                android:layout_width="180dp"
+                android:layout_height="48dp" android:id="@+id/idbtnAbbrechen"
+                app:backgroundTint="@color/light_blue_500"
+                app:layout_constraintBottom_toBottomOf="@+id/idtbnNeu"
+                app:layout_constraintEnd_toStartOf="@+id/idtbnNeu"
+                android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp"
+                android:onClick="onBtnAbbruchClick"/>
+        <Button
+                android:text="@string/btn_erstellen"
+                android:layout_width="180dp"
+                android:layout_height="48dp" android:id="@+id/idtbnNeu"
+                app:backgroundTint="@color/light_blue_500"
+                android:layout_marginStart="4dp"
+                app:layout_constraintStart_toEndOf="@+id/idbtnAbbrechen"
+                android:onClick="onBtnHinzuClick"
+                app:layout_constraintTop_toBottomOf="@+id/ETnewItemBeschreibung" android:layout_marginTop="24dp"
+        />
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:text="1"
+                android:ems="10"
+                android:gravity="center"
+                android:id="@+id/idETnumber"
+                app:layout_constraintEnd_toEndOf="@+id/TVanzahl"
+                app:layout_constraintStart_toStartOf="@+id/TVanzahl" android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp" app:layout_constraintBottom_toBottomOf="@+id/ETnewItemBenennung"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
